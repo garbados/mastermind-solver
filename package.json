@@ -1,0 +1,24 @@
+{
+  "name": "mastermind-solver",
+  "version": "1.0.0",
+  "description": "Solves Mastermind games using Donald Knuth's 1977 solution.",
+  "main": "index.js",
+  "scripts": {
+    "jshint": "jshint bin lib test",
+    "jscov": "jscoverage lib cov",
+    "report": "npm run jshint && npm run jscov && npm run html",
+    "test": "mocha -R spec",
+    "html": "mocha -R html-cov > index.html",
+    "todo": "grep -r TODO lib bin test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garbados/mastermind-solver"
+  },
+  "author": "Diana Thayer <me@dianathayer.org>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garbados/mastermind-solver/issues"
+  },
+  "homepage": "https://github.com/garbados/mastermind-solver"
+}
